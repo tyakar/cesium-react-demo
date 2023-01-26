@@ -1,0 +1,27 @@
+.footer {
+    position: absolute;
+    height: 35px !important;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 5;
+    bottom: 0px;
+    width: 100%;
+}
+
+#active-coordinate-position{
+
+    width: 350px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+    float: right;
+    position: relative;
+    border-radius: 14px;
+    margin: 5px 15px 5px 0px;
+}
+
+.ol-mouse-position {
+    top: 2px;
+    right: 23px;
+    position: absolute;
+}

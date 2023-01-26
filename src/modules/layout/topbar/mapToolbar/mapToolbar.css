@@ -1,0 +1,30 @@
+.mapToolbar  button.mapToolbarButton {
+    position: absolute;
+    bottom: 45px;
+    right: 210px;
+    z-index: 5;
+
+}
+
+.mapToolbar .p-sidebar {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    color: rgba(255,255,255,0.8) !important;
+    padding: 0.571em 1em;
+    border: none !important;
+    height:auto;
+}
+
+.mapToolbar .p-sidebar-active {
+    margin-top: 105px!important;
+}
+
+.mapToolbar .p-tabview .p-tabview-panels{
+    background-color: rgba(255,255,255,0.08) !important;
+    color: rgba(255,255,255,0.80) !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+
+.cesium-infoBox{
+    top: 120px !important;
+}

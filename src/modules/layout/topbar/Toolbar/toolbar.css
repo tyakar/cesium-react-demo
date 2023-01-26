@@ -1,0 +1,29 @@
+nav.topbar{
+    position:absolute!important;
+    top:70px!important;
+    height: 35px !important;
+    background-color: rgba(0,0,0,0.6) !important;
+    z-index: 1000 !important;
+}
+
+nav.topbar .dropdown-menu{
+    top: 34px !important;
+    left: -470px !important;
+    height: auto !important;
+    min-width: 500px !important;
+    background-color: rgba(0,0,0,0.6) !important;
+    color: rgba(255,255,255,0.8) !important;
+    padding: 15px !important;
+    border-radius: 0px 0px 10px 10px !important;
+}
+
+div.bookmarks{
+    background-color: rgba(0,0,0,0) !important;
+
+}
+
+div.bookmarks .card-body{
+    height: 200px !important;
+    overflow-y: auto;
+
+}

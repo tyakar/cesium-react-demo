@@ -1,0 +1,36 @@
+.navbarMenu{
+    height: 70px;
+    width:100%;
+    background-color: rgba(0,0,0,0.8) !important;
+    color: rgba(255,255,255,0.8);
+
+}
+
+.navbarMenu .dropdown-menu {
+    overflow-y: auto;
+    max-height: 500px !important;
+    min-width: 200px !important;
+    position: absolute;
+    will-change: transform;
+    top: 13px;
+    transform: translate3d(-1px, 40px, 0px);
+    background: rgba(0,0,0,0.8) !important;
+    z-index: 1000;
+    display: none;
+    float: left;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: rgba(255,255,255,0.80) !important;
+    text-align: left;
+    list-style: none;
+    background-clip: padding-box;
+    border-radius: 0 0 10px 10px !important;
+    left: -435px !important;
+}
+
+.navbarMenu .dropdown-item:focus, .navbarMenu .dropdown-item:hover {
+
+    background-color: rgba(255,255,255,0.3) !important;
+}
+

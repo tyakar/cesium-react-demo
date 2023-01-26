@@ -24,13 +24,19 @@ module.exports = {
         mainFiles: ['index', 'Cesium']
     },
     module: {
-        rules: [{
-            test: /\.css$/,
-            use: ['style-loader', 'css-loader']
-        }, {
-            test: /\.(png|gif|jpg|jpeg|svg|xml|json)$/,
-            use: ['url-loader']
-        }]
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                loader: 'babel-loader',
+                options: { presets: ['@babel/env', '@babel/preset-react'] },
+            }, {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }, {
+                test: /\.(png|gif|jpg|jpeg|svg|xml|json)$/,
+                use: ['url-loader']
+            }]
     },
     plugins: [
         new HtmlWebpackPlugin({

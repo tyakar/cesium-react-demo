@@ -1,0 +1,11 @@
+.fabMenu .fab-container {
+    z-index: 1;
+    right: 20px;
+    bottom: 40px;
+
+}
+
+.fabMenu .fab-item{
+    background-color: black !important;
+
+}

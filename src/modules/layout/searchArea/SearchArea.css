@@ -1,0 +1,14 @@
+.searchArea .p-sidebar {
+    background-color: rgba(0, 0, 0, 0.6)!important;
+    color: rgba(255,255,255,0.8) !important;
+    padding: 0.571em 1em;
+    border: none !important;
+}
+
+.searchArea button.searchAreaButton {
+    position: absolute;
+    bottom: 45px;
+    right: 150px;
+    z-index: 5;
+
+}
