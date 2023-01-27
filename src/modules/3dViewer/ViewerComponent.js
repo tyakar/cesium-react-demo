@@ -1,6 +1,8 @@
-import { Ion, Viewer, createWorldTerrain, createOsmBuildings, Cartesian3, Math, Color, IonResource } from "cesium";
+import React, { useEffect }  from 'react'
+
+import { Ion, Viewer, createWorldTerrain, createOsmBuildings, Cartesian3, Math, Color,IonResource } from "cesium";
+
 import "cesium/Build/Cesium/Widgets/widgets.css";
-import react, { useEffect } from "react";
 // import "../src/css/main.css"
 
 // These are all the radar points from this flight.
@@ -32,26 +34,26 @@ function ViewerComponent() {
             });
         }
 
-        // const tileset = viewer.scene.primitives.add(
-        //   new Cesium.Cesium3DTileset({
-        //     url: Cesium.IonResource.fromAssetId(1484187),
-        //   })
-        // );
+        // // const tileset = viewer.scene.primitives.add(
+        // //   new Cesium.Cesium3DTileset({
+        // //     url: Cesium.IonResource.fromAssetId(1484187),
+        // //   })
+        // // );
 
-        const resource = IonResource.fromAssetId(1484228);
-        const entity = viewer.entities.add({
-            model: { uri: resource },
-            position: Cartesian3.fromDegrees(-122.39053, 37.61779, 0),
-        });
+        // const resource = IonResource.fromAssetId(1484228);
+        // const entity = viewer.entities.add({
+        //     model: { uri: resource },
+        //     position: Cartesian3.fromDegrees(-122.39053, 37.61779, 0),
+        // });
 
         // Fly the camera to San Francisco at the given longitude, latitude, and height.
         viewer.camera.flyTo({
-            destination: Cartesian3.fromDegrees(-122.39053, 37.61779, 400),
-            orientation: {
-                heading: Math.toRadians(0.0),
-                pitch: Math.toRadians(-15.0),
+            destination : Cartesian3.fromDegrees(-122.39053, 37.61779, 400),
+            orientation : {
+              heading : Math.toRadians(0.0),
+              pitch : Math.toRadians(-15.0),
             }
-        });
+          });
 
     });
 

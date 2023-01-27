@@ -1,7 +1,10 @@
+import React from 'react'
+
 import { createRoot } from 'react-dom/client';
-import ViewerComponent from './modules/3dViewer/viewerComponent';
+import App from './App';
 
 const rootElement = document.getElementById('cesiumContainer');
 const root = createRoot(rootElement);
 
-root.render(<ViewerComponent/>);
+root.render(<App/>);
+

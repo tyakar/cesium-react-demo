@@ -26,7 +26,7 @@ export default function LoginPopup() {
         const options = {
             callbackSuccess: authorizationCallbackSuccess,
             method: 'post',
-            url: 'https://eafaddev-auth.afad.gov.tr/oauth/revoke',
+            url: 'https://application-address/oauth/revoke',
             headers: {
                 'Authorization': 'Bearer ' + localStorage.getItem('access_token')
             }
