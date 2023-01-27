@@ -3,7 +3,7 @@ import React, { useEffect }  from 'react'
 import { Ion, Viewer, createWorldTerrain, createOsmBuildings, Cartesian3, Math, Color,IonResource } from "cesium";
 
 import "cesium/Build/Cesium/Widgets/widgets.css";
-// import "../src/css/main.css"
+import "./3dMain.css";
 
 // These are all the radar points from this flight.
 const flightData = JSON.parse(
@@ -16,7 +16,7 @@ function ViewerComponent() {
     useEffect(() => {
         // Initialize the Cesium Viewer in the HTML element with the `cesiumContainer` ID.
         const viewer = new Viewer('cesiumContainer', {
-
+            
             terrainProvider: createWorldTerrain()
         });
 
